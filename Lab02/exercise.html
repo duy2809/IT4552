@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="servey_form">
+        <form action="exercise.php" method="post">
+          <h1>Survey form</h1>
+          <br />
+          <div class="row">
+            <div class="col-15">
+              <lable>Enter your name:</lable>
+            </div>
+            <div class="col-85">
+              <input
+                type="text"
+                size="23"
+                maxlength="50"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-15">
+              <label>Your gender:</label>
+            </div>
+            <div class="col-85">
+              <input type="radio" name="gender" value="Male" />
+              <lable>Male</lable>
+              <input type="radio" name="gender" value="Female" />
+              <lable>Female </lable>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-15">
+              <lable>Enter your class:</lable>
+            </div>
+            <div class="col-85">
+              <input
+                type="text"
+                size="23"
+                maxlength="23"
+                name="class"
+                placeholder="Class..."
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-15">
+              <lable>Enter your university:</lable>
+            </div>
+            <div class="col-85">
+              <input
+                type="text"
+                size="23"
+                maxlength="50"
+                name="university"
+                placeholder="Your university..."
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-15">
+              <lable>Your hobby:</lable>
+            </div>
+            <div class="col-85">
+              <input
+                type="checkbox"
+                id="soccer"
+                name="hobby[]"
+                value="Playing soccer"
+              />
+              <label for="soccer">Playing soccer</label><br />
+              <input
+                type="checkbox"
+                id="game"
+                name="hobby[]"
+                value="Playing games"
+              />
+              <label for="game">Playing games</label><br />
+              <input
+                type="checkbox"
+                id="swimming"
+                name="hobby[]"
+                value="Swimming"
+              />
+              <label for="swimming">Swimming</label><br />
+              <input
+                type="checkbox"
+                id="listen music"
+                name="hobby[]"
+                value="Listening to music"
+              />
+              <label for="listen music">Listening to music</label><br />
+              <input
+                type="checkbox"
+                id="book"
+                name="hobby[]"
+                value="Reading books"
+              />
+              <label for="book">Reading books</label><br />
+            </div>
+          </div>
+          <br />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Erase and Restart" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
